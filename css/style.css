@@ -1,0 +1,47 @@
+html, body {
+    height: 100%;
+}
+
+.container-main {
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+footer {
+    background-color: #d9304f;
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    color: #592848;
+}
+
+#footer-brand {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2em;
+}
+
+#updateForm {
+    background-color: yellow;
+}
+
+.card-date {
+    color: #d9304f;
+}
+
+.grid-container {
+    display: grid;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0.5em;
+    text-align: center;
+}

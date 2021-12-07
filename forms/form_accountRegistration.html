@@ -1,0 +1,81 @@
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item col-6" role="presentation">
+        <a class="nav-link active" id="user-tab" data-bs-toggle="tab" href="#user" role="tab" >User</a></li>
+    <li class="nav-item col-6" role="presentation">
+        <a class="nav-link" id="eventadmin-tab" data-bs-toggle="tab" href="#eventadmin">Event Administrator</a></li>
+</ul>
+
+<div class="tab-content pt-3">
+    <div id="user" class="tab-pane active">
+        <form method="post" action="index.php?pageID=register" class="form-horizontal">
+            <div class="container">
+                <div class="row mb-3">
+                    <label for="firstname" hidden><b>First Name</b></label>
+                    <div class="col-sm-6">
+                        <input type="text" placeholder="Enter First Name" name="firstname" id="firstname" class="form-control" required>
+                    </div>
+                    <label for="lastname" hidden><b>Last Name</b></label>
+                    <div class="col-sm-6">
+                        <input type="text" placeholder="Enter Last Name" name="lastname" id="lastname" class="form-control" required>
+                    </div>
+                </div>
+                <label for="email" hidden><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" id="email" class="form-control mb-3" required>
+
+                <label for="mobnumber" hidden><b>Mobile Number</b></label>
+                <div class="input-group">
+                    <input type="tel" id="mobnumber" name="mobnumber" placeholder="Enter Mobile Number" pattern="^08[35-9]{1}[0-9]{7}$" title="Mobile Number Format: 0831234567" class="form-control mb-3" required>
+                </div>
+
+                <label for="password" hidden><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="password" id="password" class="form-control mb-3" required>
+
+                <label for="password-repeat" hidden><b>Repeat Password</b></label>
+                <input type="password" placeholder="Repeat Password" name="password-repeat" id="password-repeat" class="form-control" required>
+                <hr>
+
+                <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+                <div class="g-recaptcha" data-sitekey="6LfdIbwaAAAAALzDNML_P5SLxFJ4l3gmrY61nWhk"></div>
+                <div class="d-grid gap-2">
+                    <button type="submit" class="btn btn-primary" name="btnRegUser">Register</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div id="eventadmin" class="tab-pane fade">
+        <form method="post" action="index.php?pageID=register" class="form-horizontal">
+            <div class="container">
+                <div class="row mb-3">
+                    <label for="firstname" hidden><b>First Name</b></label>
+                    <div class="col-sm-6">
+                        <input type="text" placeholder="Enter First Name" name="firstname" id="firstname" class="form-control" required>
+                    </div>
+                    <label for="lastname" hidden><b>Last Name</b></label>
+                    <div class="col-sm-6">
+                        <input type="text" placeholder="Enter Last Name" name="lastname" id="lastname" class="form-control" required>
+                    </div>
+                </div>
+                <label for="email" hidden><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" id="email" class="form-control mb-3" required>
+
+                <label for="mobnumber" hidden><b>Mobile Number</b></label>
+                <div class="input-group">
+                    <input type="tel" id="mobnumber" name="mobnumber" placeholder="Enter Mobile Number" pattern="^08[35-9]{1}[0-9]{7}$" title="Mobile Number Format: 0831234567" class="form-control mb-3" required>
+                </div>
+
+                <label for="password" hidden><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="password" id="password" class="form-control mb-3" required>
+
+                <label for="password-repeat" hidden><b>Repeat Password</b></label>
+                <input type="password" placeholder="Repeat Password" name="password-repeat" id="password-repeat" class="form-control" required>
+                <hr>
+
+                <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+                <div class="g-recaptcha" data-sitekey="6LfdIbwaAAAAALzDNML_P5SLxFJ4l3gmrY61nWhk"></div>
+                <div class="d-grid gap-2">
+                    <button type="submit" class="btn btn-primary" name="btnRegEventAdmin">Register</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
